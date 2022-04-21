@@ -1,3 +1,5 @@
+const { filterOutFalsy } = require("./app.js");
+
 describe("fn to return first input if first input is falsy else second input", () => {
     test("in: 0, 500 out: 0", () => {
         expect(filterOutFalsy(0, 500)).toBe(0);
