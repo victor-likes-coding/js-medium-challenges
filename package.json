@@ -1,10 +1,13 @@
 {
-  "name": "js-medium",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Victor Tran <victor-likes-coding@tempestas.io>",
-  "license": "MIT",
-  "dependencies": {
-    "jest": "^27.5.1"
-  }
+    "name": "js-medium",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Victor Tran <victor-likes-coding@tempestas.io>",
+    "license": "MIT",
+    "dependencies": {
+        "jest": "^27.5.1"
+    },
+    "scripts": {
+        "test": "jest --watchAll"
+    }
 }
