@@ -1,4 +1,4 @@
-const { filterOutFalsy, arrLength } = require("./app.js");
+const { filterOutFalsy, arrLength, lastElem } = require("./app.js");
 
 describe("fn to return first input if first input is falsy else second input", () => {
     test("in: 0, 500 out: 0", () => {
@@ -26,14 +26,14 @@ describe("fn that returns length of array (stupid)", () => {
 
 describe("fn to get last element", () => {
     test("in: [3, 2, 0, 6, 2], out: 2", () => {
-        expect(arrLength([3, 2, 0, 6, 2])).toBe(2);
+        expect(lastElem([3, 2, 0, 6, 2])).toBe(2);
     });
 
     test("in: ['dog', 'cat', 'ball'], out: 'ball'", () => {
-        expect(["dog", "cat", "ball"]).toBe("ball");
+        expect(lastElem(["dog", "cat", "ball"])).toBe("ball");
     });
 
     test("in: [null, 5, false]", () => {
-        expect(arrLength([null, 5, false])).toBe(false);
+        expect(lastElem([null, 5, false])).toBe(false);
     });
 });
