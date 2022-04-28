@@ -51,3 +51,15 @@ describe("fn to return sum of an array", () => {
         expect(arrSum([0, -5, -10])).toBe(-15);
     });
 });
+
+describe("fn to add up numbers from one to that number", () => {
+    test("in: 3, out: 6", () => {
+        expect(progressiveSum(3)).toBe(6);
+    });
+    test("in: 4, out: 10", () => {
+        expect(progressiveSum(4)).toBe(10);
+    });
+    test("in: 600, out: 180300", () => {
+        expect(progressiveSum(600)).toBe(180300);
+    });
+});
