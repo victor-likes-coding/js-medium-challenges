@@ -14,9 +14,16 @@ const arrSum = (arr = []) => {
     }, 0);
 };
 
+const progressiveSum = (num) => {
+    // two ways to solve this, one is a loop to sum or the very non-expensive constant time operation
+    // o^n vs n times
+    return (num * (num + 1)) / 2;
+};
+
 module.exports = {
     filterOutFalsy,
     arrLength,
     lastElem,
     arrSum,
+    progressiveSum,
 };
