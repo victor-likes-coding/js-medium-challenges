@@ -23,3 +23,17 @@ describe("fn that returns length of array (stupid)", () => {
         expect(arrLength([])).toBe(0);
     });
 });
+
+describe("fn to get last element", () => {
+    test("in: [3, 2, 0, 6, 2], out: 2", () => {
+        expect(arrLength([3, 2, 0, 6, 2])).toBe(2);
+    });
+
+    test("in: ['dog', 'cat', 'ball'], out: 'ball'", () => {
+        expect(["dog", "cat", "ball"]).toBe("ball");
+    });
+
+    test("in: [null, 5, false]", () => {
+        expect(arrLength([null, 5, false])).toBe(false);
+    });
+});
