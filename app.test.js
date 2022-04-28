@@ -63,3 +63,17 @@ describe("fn to add up numbers from one to that number", () => {
         expect(progressiveSum(600)).toBe(180300);
     });
 });
+
+describe("fn to calculate number in seconds, return in mm:ss format", () => {
+    test("in: 66, out: '01:06", () => {
+        expect(calcTime(66)).toBe("01:06`");
+    });
+
+    test("in: 50, out: '00:50'", () => {
+        expect(calcTime(50)).toBe("00:50");
+    });
+
+    test("in: 300, out: '05:00'", () => {
+        expect(calcTime(300)).toBe("05:00");
+    });
+});
