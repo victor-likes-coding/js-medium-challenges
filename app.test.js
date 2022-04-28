@@ -37,3 +37,17 @@ describe("fn to get last element", () => {
         expect(lastElem([null, 5, false])).toBe(false);
     });
 });
+
+describe("fn to return sum of an array", () => {
+    test("in: [2, 2, 2], out: 6", () => {
+        expect(arrSum([2, 2, 2])).toBe(6);
+    });
+
+    test("in: [100, 200, 500], out: 800", () => {
+        expect(arrSum([100, 200, 500])).toBe(800);
+    });
+
+    test("in: [0, -5, -10], out: -15", () => {
+        expect(arrSum([0, -5, -10])).toBe(-15);
+    });
+});
