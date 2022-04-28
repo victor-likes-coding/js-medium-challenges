@@ -1,4 +1,4 @@
-const { filterOutFalsy, arrLength, lastElem, arrSum } = require("./app.js");
+const { filterOutFalsy, arrLength, lastElem, arrSum, progressiveSum } = require("./app.js");
 
 describe("fn to return first input if first input is falsy else second input", () => {
     test("in: 0, 500 out: 0", () => {
